@@ -1,4 +1,4 @@
-# Water-Qualitu-Monitoring-System
+# Water-Quality-Monitoring-System
 
 Website of water quality monitoring system using Arduino, C, PHP, AngularJS and Python.
 
