@@ -1,0 +1,4 @@
+INSERT INTO reading (time,temperature,turbidity,ph) VALUES
+(CURTIME(),42,45,7.9);
+
+-- http://localhost:8080/waterqualitysystem/insert_data.php?temperature=45&turbidity=20&ph=8

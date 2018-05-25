@@ -1,0 +1,29 @@
+
+-- DROP DATABASE IF EXISTS waterqualitysystem;
+-- CREATE DATABASE waterqualitysystem;
+-- USE waterqualitysystem;
+
+CREATE TABLE user (
+
+userid int(11) NOT NULL AUTO_INCREMENT,
+fullname text NOT NULL,
+email text NOT NULL,
+username text NOT NULL,
+password text NOT NULL,
+PRIMARY KEY(userid
+)
+);
+
+CREATE TABLE reading (
+
+readingid int(11) NOT NULL AUTO_INCREMENT,
+time text NOT NULL,
+temperature decimal(5) NOT NULL,
+turbidity decimal(5) NOT NULL,
+ph decimal(5,1) NOT NULL,
+PRIMARY KEY(readingid)
+);
+
+INSERT INTO user (fullname,email,username,password) VALUES
+('Atif Mustaffa','atifmustaffa@gmail.com','admin','1122'),
+('Azfar Hamzah','azfarhamzah95@gmail.com','azfar','1122');
