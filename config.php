@@ -13,7 +13,7 @@ $database_name = 'waterqualitysystem';
 // Example 1: https://localhost/Water-Quality-Monitoring-System-Website
 // Example 2: https://localhost:8080/Water-Quality-Monitoring-System-Website
 // Example 3: https://waterqualitysystem.000webhostapp.com
-$host = 'http://localhost/Water-Quality-Monitoring-System-Website';
+$host = 'http://localhost/Water-Quality-Monitoring-System-Website/'; // End url with a slash '/'
 
 // Admin email for receiving registration request, contact-us forms etc 
 $admin_email = 'aretif95@gmail.com';
