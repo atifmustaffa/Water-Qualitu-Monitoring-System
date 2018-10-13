@@ -15,7 +15,7 @@ A part of final year project KICT, IIUM
     
 * PHP - _**PHP 7.2.10** is used in this project_
 
-* SQL Database Server
+* SQL Database Server - _Read ```sql.txt``` and ```sql2.txt``` for database and table setup_
 
 
 ** _Configure project website settings in ```config.php``` file_
