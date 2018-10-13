@@ -1,4 +1,5 @@
 <?php
+include ('./config.php');
 $isLoggedOn = false;
 session_start();
 if (array_key_exists('loginId', $_SESSION)) {

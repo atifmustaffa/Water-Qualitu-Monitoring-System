@@ -1,10 +1,10 @@
 <?php
 session_start();
 if (array_key_exists('loginId', $_SESSION)) {
-	$con = mysqli_connect('localhost','root','qwe123') 
-   or die('Cannot connect to the DB');
+    $con = mysqli_connect('localhost',$username,$password) 
+    or die('Cannot connect to the DB');
 
-	mysqli_select_db($con, 'waterqualitysystem');
+    mysqli_select_db($con, $database_name);
 
 	$myArray = array();
 	$result = mysqli_query($con,"SELECT ROUND(AVG(temperature)) AS temperature,ROUND(AVG(turbidity)) AS turbidity,ROUND(AVG(ph),1) AS ph FROM (SELECT * FROM reading ORDER BY time DESC LIMIT 12) AS T");

@@ -1,11 +1,12 @@
 <?php
+include ('./config.php');
 
 // session_start();
 // if (array_key_exists('loginId', $_SESSION)) {
-    $con = mysqli_connect('localhost','root','qwe123') 
-   or die('Cannot connect to the DB');
+    $con = mysqli_connect('localhost',$username,$password) 
+    or die('Cannot connect to the DB');
 
-    mysqli_select_db($con, 'waterqualitysystem');
+    mysqli_select_db($con, $database_name);
 
     $dataPoints1 = array();
     $dataPoints2 = array();

@@ -1,4 +1,5 @@
 <?php
+include ('./config.php');
 
 $msg = "Contact Us Page<br>"
 .$_POST['contact_name']."<br>"
@@ -13,6 +14,12 @@ $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 $msg = wordwrap($msg,80);
 
 // send email
-// mail("aretif95@gmail.com","Water Quality System Message",$msg,$headers);
+if($send_email) {
+    mail($admin_email,"Water Quality System Message",$msg,$headers);
+    echo "Email sent";
+}
+else {
+    echo "Email not being sent: Send Email option? ".(int)$send_email;
+}
 
 ?>

@@ -1,11 +1,13 @@
 <?php
+include ('./config.php');
+
 session_start();
 
 if(!isset($_SESSION['loginId'])) {
-	$con = mysqli_connect('localhost','root','qwe123') 
-       or die('Cannot connect to the DB');
+    $con = mysqli_connect('localhost',$username,$password) 
+    or die('Cannot connect to the DB');
 
-	mysqli_select_db($con, 'waterqualitysystem');
+    mysqli_select_db($con, $database_name);
 	$result = mysqli_query($con,"SELECT username, password FROM user");
 	$response = "invalid";
 	if($result->num_rows > 0) {
