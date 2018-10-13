@@ -4,6 +4,9 @@ session_start();
 if (array_key_exists('loginId', $_SESSION)) {
 	$isLoggedOn = true;
 }
+if (!array_key_exists('isWarningEmail', $_SESSION)) {
+	$_SESSION['isWarningEmail'] = "false";
+}
 ?>
 <!DOCTYPE html>
 <html>
