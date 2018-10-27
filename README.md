@@ -53,4 +53,4 @@ A part of final year project KICT, IIUM
 
 ** _Configure arduino **serial port** and **website host address** in ```serialread.py``` file_
 
-** _Done :-)_
+** _Run/Open ```serialread.py```_
