@@ -19,7 +19,7 @@ A part of final year project KICT, IIUM
 
 ## Installation
 #### Setting up Windows Environment Variable (Only for Windows)
-** _If you have python path configured in **Windows Environment Variables**, you may skip this part and proceed to installation of required python packages below_
+** _If you have python path configured in **Windows Environment Variables**, you may skip this part and proceed to [installation of required python packages](#install-required-python-packages) below_
 1.  Find **Python Path OR Python Installation Location**
     Example of Python 3.7.0 default location:
     ```
